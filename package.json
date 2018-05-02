@@ -1,0 +1,30 @@
+{
+  "name": "yandex-xml",
+  "version": "1.0.0",
+  "description": "Yandex.XML API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredure/yandex-xml.git"
+  },
+  "keywords": [
+    "Yandex",
+    "Yandex.XML",
+    "Yandex API",
+    "Yandex Search",
+    "Yandex ES6"
+  ],
+  "author": "Nazar Ugrinovsky <nazar9505@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fredure/yandex-xml/issues"
+  },
+  "homepage": "https://github.com/fredure/yandex-xml#readme",
+  "dependencies": {
+    "request-promise": "^4.2.2",
+    "xml2js": "^0.4.19"
+  }
+}
