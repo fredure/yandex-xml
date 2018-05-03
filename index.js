@@ -1,6 +1,6 @@
 // Copyright (c) 2018 Nazar Ugrinovsky
 
-const 
+const
     xml2js = require('xml2js'),
     rp = require('request-promise');
 
@@ -35,7 +35,7 @@ class YandexXML {
 
     /**
      * Http request to Yandex
-     * @param  {String} query
+     * @param  {Object} options
      * @return {String} https answer
      */
     async request(options) {
@@ -62,7 +62,7 @@ class YandexXML {
     async beautify(xml) {
         try {
             const res = await this.convert(xml);
-            
+
             if (
                 !res.yandexsearch || 
                 !res.yandexsearch.response || 
@@ -84,11 +84,11 @@ class YandexXML {
             ) {
                 throw new Error("Invalid answer");
             }
-    
+
             const groups = res.yandexsearch.response[0].results[0].grouping[0].group;
-            
+
             const elements = [];
-            
+
             groups.forEach((el, i, arr) => {
                 const doc = el.doc[0];
                 const element = {

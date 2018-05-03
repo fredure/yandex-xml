@@ -1,10 +1,9 @@
-# yandex-xml
-==================
+# Yandex.XML API Wrapper
 
 ES6 Interface for Yandex XML search
 
 ## Installation
-```$ npm install fredure/yandex-xml```
+```$ npm install yandex-xml```
 
 ## Usage
 ```javascript
