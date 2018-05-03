@@ -15,7 +15,7 @@ ya.search(options)
 ```javascript
 const YandexXML = require('yandex-xml');
 const ya = new YandexXML('<USERNAME>', '<KEY>');
-const res = await yandex.search({ query: '<QUERY>' });
+const res = await ya.search({ query: '<QUERY>' });
 
 res.forEach((el, i, arr) => {
     console.log(`${el.url} ${el.domain} ${el.title}`);
@@ -23,4 +23,4 @@ res.forEach((el, i, arr) => {
 ```
 
 ## Options
-All options in the official documentationd [here](http://api.yandex.com/xml/doc/dg/concepts/post-request.xml).
+All options in the official documentation [here](https://tech.yandex.com/xml/doc/dg/concepts/get-request-docpage/).
